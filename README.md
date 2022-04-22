@@ -1,6 +1,6 @@
-# Professional Portfolio v2.0 :unicorn: :dart:
+# Professional Portfolio v2.0 :unicorn::martial_arts_uniform:
 
-#### This is my professional portfolio site built using HTML5 and CSS Flexbox. Check out the live site and vave fun browing my linked work projects! [Live Site](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
+#### This is the source repo for my portfolio site. It is built with HTML5 and CSS Flexbox only. Check out the live site in the link below where you can find all my projects and contact info for any opportunities/feedback/questions.
 
 ### To use this Application
 
