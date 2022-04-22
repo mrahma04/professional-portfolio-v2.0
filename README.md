@@ -1,4 +1,4 @@
-# Professional Portfolio v2.0 :unicorn::dart:
+# Professional Portfolio v2.0 :unicorn: :dart:
 
 #### This is my professional portfolio site built using HTML5 and CSS Flexbox. Check out the live site and vave fun browing my linked work projects! [Live Site](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
 
