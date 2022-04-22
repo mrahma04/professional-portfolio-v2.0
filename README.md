@@ -1,12 +1,12 @@
 # Professional Portfolio v2.0 :unicorn::martial_arts_uniform:
 
-#### This is the source repo for my portfolio site. It is built with HTML5 and CSS Flexbox only. Check out the live site in the link below where you can find all my projects and contact info for any opportunities/feedback/questions.
+#### This is the source repo for my portfolio site. It is built entirely with HTML5 and CSS Flexbox only. Check out the live site in the link below where you can find all my projects and contact info for any opportunities/feedback/questions.
 
 ### To use this Application
 
 - [Go to live link](https://mrahma04.github.io/password-generator-v2.0/)
-- Click on Portfolio Links to GitHub Repos
-- Answer questions in Window Prompts
+- Click on Portfolio Links to GitHub repos
+- Contact info/social media links
 
 ### User Story
 

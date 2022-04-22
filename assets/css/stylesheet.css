@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+
+body {
+    font-family: 'Noto Sans Mono', 'sans-serif';
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+}
+
+header h1 {
+    background-color: aquamarine;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    min-width: 120px;
+    text-align: center;
+}
+
+.hero {
+    background-color: brown;
+    min-width: 320px;
+}
