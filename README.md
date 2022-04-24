@@ -37,6 +37,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ### Screenshots
 
 #### Large Screens
-![Larger screens](./assets/img/2022-04-24-03-59-31.png)
+![](./assets/img/2022-04-24-03-59-31.png)
 #### Smaller Screens
-![Smaller screens](./assets/img/2022-04-24-04-02-33.png)
+![](./assets/img/2022-04-24-04-15-48.png)
