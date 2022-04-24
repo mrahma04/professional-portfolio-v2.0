@@ -44,7 +44,7 @@ header nav ul li a {
     min-height: 16rem;
     justify-content: flex-end;
     align-items: flex-end;
-    background-image: url('/assets/img/ing-pK-8itKo6L4-unsplash.jpeg');
+    background-image: url('./assets/img/ing-pK-8itKo6L4-unsplash.jpeg');
     background-position: center;
     background-size: cover;
 }
