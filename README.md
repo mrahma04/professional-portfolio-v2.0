@@ -1,6 +1,6 @@
 # Professional Portfolio v2.0 :unicorn::martial_arts_uniform:
 
-#### This is the source repo for my portfolio site. It is built entirely with HTML5 and CSS Flexbox only. Check out the live site in the link below where you can find all my projects and contact info for any opportunities/feedback/questions.
+#### This is the source repo for my portfolio site. It is built entirely with HTML5, CSS3 and Flexbox only. Check out the live site in the link below where you can find all my projects and contact info for any opportunities/feedback/questions.
 
 ### To use this Application
 
