@@ -188,7 +188,11 @@ footer nav ul li {
 
 /* apply following settings BELOW 480 px width viewports */
 /* phones */
-@media all and (max-width: 576px) {}
+@media all and (max-width: 576px) {
+    header nav ul {
+        display: block;
+    }
+}
 
 /* tablets */
 @media all and (max-width: 768px) {
@@ -204,6 +208,15 @@ footer nav ul li {
         flex-direction: column;
     }
 
+    header nav ul {
+        display: block;
+    }
+
+    .hero {
+        min-height: 10rem;
+        font-size: 1.8rem;
+    }
+
     .section-parent {
         flex-direction: column;
         row-gap: 1rem;
@@ -214,10 +227,16 @@ footer nav ul li {
         border-right: 0;
         text-align: left;
         padding-bottom: .5rem;
+        padding-left: .25rem;
     }
 
     .section-content {
         flex-direction: column;
+        margin: 0;
+    }
+
+    .section-content p {
+        padding-left: .25rem;
     }
 
     .footer-nav ul {
