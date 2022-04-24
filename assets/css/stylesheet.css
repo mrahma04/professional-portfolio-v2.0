@@ -63,7 +63,7 @@ header nav ul {
 }
 
 header nav ul li {
-    min-width: 8rem;
+    min-width: 7rem;
     list-style: none;
     text-align: center;
     font-size: 1.2rem;
@@ -191,6 +191,10 @@ footer nav ul li {
 @media all and (max-width: 576px) {
     header nav ul {
         display: block;
+    }
+
+    h1 {
+        font-size: .75rem;
     }
 }
 
