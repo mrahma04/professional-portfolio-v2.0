@@ -35,3 +35,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ### Screenshots
+
+![](./assets/img/2022-04-24-03-59-31.png)
