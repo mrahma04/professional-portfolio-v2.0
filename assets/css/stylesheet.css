@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
 
-body {
-    font-family: 'Noto Sans Mono', 'sans-serif';
+* {
     padding: 0;
     margin: 0;
+    /* width and height of element will include padding and border */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans Mono', 'sans-serif';
+    height: 100vh;
 }
 
 header {
@@ -11,6 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: beige;
+    min-height: 6rem;
 }
 
 header h1 {
@@ -22,12 +29,94 @@ header nav ul {
 }
 
 header nav ul li {
+    min-width: 8rem;
     list-style: none;
-    min-width: 120px;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
 }
 
 .hero {
-    background-color: brown;
-    min-width: 320px;
+    display: flex;
+    min-height: 16rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url('/assets/img/ing-pK-8itKo6L4-unsplash.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    color: cadetblue;
+}
+
+.section-parent {
+    display: flex;
+    margin: 1rem 0rem;
+}
+
+.section-title {
+    /* shorthand for flex-grow flex-shrink flex-basis */
+    /* if single unitless value then flex-grow and flex-shring set to 0 */
+    flex: 1;
+    border-right: .3rem solid #ffb703;
+    text-align: end;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.section-content {
+    /* shorthand for flex-grow flex-shrink flex-basis */
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    /* clockwise top, right, bottom, left */
+    margin: 0rem 0rem 0rem 1rem;
+    /* adds a margin BETWEEN rows in flex items */
+    row-gap: 1rem;
+    /* adds a margin BETWEEN columns in flex items */
+    column-gap: 1rem;
+}
+
+.section-content .item-1 {
+    /* sets the initial width to 100% of parent container */
+    flex-basis: 100%;
+    min-height: 8rem;
+    background-color: aqua;
+}
+
+.item-2 {
+    /* flex-grow 1, flex-shrink 0 */
+    /* fles-basis is 50% which means starting initial size is 50% of parent minus 1rem for margin */
+    /* flex-grow will grow in the direction of the row, right to left */
+    flex: 1 0 calc(50% - 1rem);
+    min-height: 6rem;
+    background-color: #ffb703;
+}
+
+.footer-nav {
+    display: flex;
+    flex-grow: 1;
+    min-height: 6rem;
+}
+
+footer nav ul {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+footer nav ul li {
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    html { font-size: 70%;}
 }
