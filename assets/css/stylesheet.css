@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&display=swap');
+
+:root {
+    --gradient-1: linear-gradient(45deg,
+            #845ec2,
+            #d65db1,
+            #ff6f91,
+            #ffc75f,
+            #f9f871);
+    --gradient-2: linear-gradient(45deg,
+            #f9f871,
+            #ffc75f,
+            #ff6f91,
+            #d65db1,
+            #845ec2);
+}
 
 * {
     padding: 0;
@@ -10,18 +25,37 @@
 body {
     font-family: 'Noto Sans Mono', 'sans-serif';
     height: 100vh;
+    background-color: #F7F7F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    margin: .25rem 0 0 .25rem;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans Mono';
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: beige;
+    background-color: #F7F7F7;
     min-height: 6rem;
 }
 
 header h1 {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    font-size: 2rem;
+    background-image: var(--gradient-1);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header nav ul {
@@ -44,9 +78,24 @@ header nav ul li a {
     min-height: 16rem;
     justify-content: flex-end;
     align-items: flex-end;
-    background-image: url('./assets/img/ing-pK-8itKo6L4-unsplash.jpeg');
-    background-position: center;
-    background-size: cover;
+    background-image: var(--gradient-1);
+    background-size: 400%;
+    /* alternate keyword will move forware with the colors and then move backward instead of starting over again */
+    animation: hero-animation 20s infinite alternate;
+}
+
+.hero>div {
+    margin: 1rem;
+}
+
+@keyframes hero-animation {
+    0% {
+        background-position: left
+    }
+
+    100% {
+        background-position: right
+    }
 }
 
 .hero-subtitle {
@@ -86,16 +135,36 @@ header nav ul li a {
     /* sets the initial width to 100% of parent container */
     flex-basis: 100%;
     min-height: 8rem;
-    background-color: aqua;
+    background-image: var(--gradient-1);
+    /* zooms in the image into the  */
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+    color: #303030;
+    /* button-specific settings */
 }
 
-.item-2 {
+.item-1:hover {
+    background-position: right;
+}
+
+.section-content .item-2 {
     /* flex-grow 1, flex-shrink 0 */
     /* fles-basis is 50% which means starting initial size is 50% of parent minus 1rem for margin */
     /* flex-grow will grow in the direction of the row, right to left */
     flex: 1 0 calc(50% - 1rem);
     min-height: 6rem;
-    background-color: #ffb703;
+    background-image: var(--gradient-2);
+    /* zooms in the image into the div and localizes to certain colors */
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+    color: #505050;
+}
+
+.item-2:hover,
+.item-2:focus {
+    background-position: right;
 }
 
 .footer-nav {
@@ -117,6 +186,47 @@ footer nav ul li {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    html { font-size: 70%;}
+/* apply following settings BELOW 480 px width viewports */
+/* phones */
+@media all and (max-width: 576px) {}
+
+/* tablets */
+@media all and (max-width: 768px) {
+    * {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .section-parent {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .section-title {
+        border-bottom: .2rem solid #ffb703;
+        border-right: 0;
+        text-align: left;
+        padding-bottom: .5rem;
+    }
+
+    .section-content {
+        flex-direction: column;
+    }
+
+    .footer-nav ul {
+        display: block;
+    }
 }
+
+/* laptops */
+@media all and (max-width: 992px) {}
+
+/* monitors */
+@media all and (max-width: 1200px) {}
