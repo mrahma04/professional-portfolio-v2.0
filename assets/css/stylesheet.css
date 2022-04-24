@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+.about-me-content {
+    font-size: 1.2rem;
+}
+
 button {
     border: 0;
     background: none;
