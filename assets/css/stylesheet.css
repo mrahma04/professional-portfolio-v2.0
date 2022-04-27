@@ -88,7 +88,7 @@ header nav ul li a {
     background-image: var(--gradient-1);
     background-size: 400%;
     /* alternate keyword will move forware with the colors and then move backward instead of starting over again */
-    animation: hero-animation 20s infinite alternate;
+    /* animation: hero-animation 20s infinite alternate;
 } */
 
 .hero>div {
@@ -263,8 +263,12 @@ footer nav ul li {
 
     .hero-image {
         padding: 0 !important;
-        background-size: 325%;
+        background-size: 250%;
         background-position: top;
+    }
+
+    .hero-content {
+        flex: 2;
     }
 
     .section-parent {
