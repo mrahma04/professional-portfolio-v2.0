@@ -100,7 +100,7 @@ header nav ul li a {
 }
 
 .hero-image {
-    background-image: url('../img/IMG_20170127_121410_394.jpeg');
+    background-image: url('assets/img/IMG_20170127_121410_394.jpeg');
     background-size: 130%;
     background-position: top;
     padding: 0 -1rem 0 0 !important;
