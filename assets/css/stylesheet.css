@@ -80,7 +80,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.hero {
+/* .hero {
     display: flex;
     min-height: 16rem;
     justify-content: flex-end;
@@ -89,10 +89,37 @@ header nav ul li a {
     background-size: 400%;
     /* alternate keyword will move forware with the colors and then move backward instead of starting over again */
     animation: hero-animation 20s infinite alternate;
-}
+} */
 
 .hero>div {
     margin: 1rem;
+}
+
+.hero-parent {
+    min-height: 16rem;
+}
+
+.hero-image {
+    background-image: url('/assets/img/IMG_20170127_121410_394.jpeg');
+    background-size: 150%;
+    background-position: top;
+    padding: 0 -1rem 0 0 !important;
+    border: 0 !important;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: var(--gradient-1);
+    background-size: 400%;
+    /* alternate keyword will move forware with the colors and then move backward instead of starting over again */
+    animation: hero-animation 20s infinite alternate;
+    margin-left: 0 !important;
+}
+
+.hero-content h2 {
+    padding: 1rem;
 }
 
 @keyframes hero-animation {
@@ -228,6 +255,16 @@ footer nav ul li {
     .hero {
         min-height: 10rem;
         font-size: 1.8rem;
+    }
+
+    .hero-parent {
+        flex-direction: row !important;
+    }
+
+    .hero-image {
+        padding: 0 !important;
+        background-size: 325%;
+        background-position: top;
     }
 
     .section-parent {
