@@ -231,6 +231,10 @@ footer nav ul li {
     h1 {
         font-size: .75rem;
     }
+
+    .hero-image {
+        display: none;
+    }
 }
 
 /* tablets */
@@ -252,18 +256,23 @@ footer nav ul li {
         display: block;
     }
 
-    .hero {
+    /* .hero {
         min-height: 10rem;
         font-size: 1.8rem;
-    }
+    } */
 
     .hero-parent {
+        min-height: 10rem;
         flex-direction: row !important;
     }
 
+    /* .hero-image {
+        display: none !important;
+    } */
+
     .hero-image {
         padding: 0 !important;
-        background-size: 250%;
+        background-size: 125%;
         background-position: top;
     }
 
