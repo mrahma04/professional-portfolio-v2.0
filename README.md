@@ -41,4 +41,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 #### Medium Screens
 ![](./assets/img/2022-04-26-21-52-08.png)
 #### Tiny Screens
-![](2022-04-26-21-53-08.png)
+![](./assets/img/2022-04-26-21-53-08.png)
